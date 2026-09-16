@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Happy Birthday, Plaksha 💗</title>
+
+<!-- Google Fonts: Playfair Display for headings, Poppins for body -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= AMBIENT LAYERS (hearts / sparkles canvas) ================= -->
+<div class="ambient-layer" id="ambientLayer" aria-hidden="true"></div>
+
+<!-- ================= 1. LANDING / WELCOME SCREEN ================= -->
+<section id="landing" class="landing">
+  <div class="landing-glow"></div>
+  <div class="landing-content">
+    <p class="landing-eyebrow">a little something for</p>
+    <!-- REPLACE "Plaksha" below with her name wherever it appears in this file -->
+    <h1 class="landing-name">Hey Plaksha... 💕</h1>
+    <p class="landing-sub" id="typewriterTarget"></p>
+    <button class="open-btn" id="openSurpriseBtn">
+      <span class="open-btn-text">Open Your Surprise</span>
+      <span class="open-btn-icon">🎁</span>
+    </button>
+  </div>
+  <div class="landing-scroll-hint">↓</div>
+</section>
+
+<!-- ================= MAIN SITE (hidden until surprise is opened) ================= -->
+<main id="mainSite" class="main-site">
+
+  <!-- ================= 2. BIRTHDAY MESSAGE ================= -->
+  <section class="section birthday-hero" id="birthday">
+    <div class="balloon-field" aria-hidden="true">
+      <span class="balloon b1">🎈</span>
+      <span class="balloon b2">🎈</span>
+      <span class="balloon b3">🎈</span>
+      <span class="balloon b4">🎈</span>
+      <span class="balloon b5">🎈</span>
+    </div>
+    <div class="section-inner">
+      <h2 class="fade-in-up">Happy Birthday, Plaksha! 🎂✨</h2>
+      <!-- REPLACE this paragraph with your own personalized birthday message -->
+      <p class="lead fade-in-up delay-1">
+        Another year of you being exactly, wonderfully you — and the world is
+        lucky for it. From the silly voice notes to the late-night talks that
+        turned into early mornings, being your friend has been one of the
+        easiest, warmest joys of my life. I hope today wraps you up in every
+        bit of the happiness you give everyone else. Here's to another year of
+        chaos, comfort, and everything in between — I'm so glad I get to share
+        it with you.
+      </p>
+    </div>
+    <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- ================= 3. SPECIAL LETTER ================= -->
+  <section class="section letter-section" id="letter">
+    <div class="section-inner">
+      <div class="letter-card fade-in-up">
+        <div class="letter-seal">💌</div>
+        <p class="letter-salutation">To a very special friend...</p>
+        <!-- REPLACE this letter with your own heartfelt message -->
+        <p class="letter-body">
+          I don't think I've ever told you properly how much your friendship
+          means to me. You've seen me at my best and my absolute worst, and
+          somehow you never once made me feel small for it. We've built a
+          little world of inside jokes, shared playlists, and memories I'll
+          be telling stories about for years — and I wouldn't trade a single
+          one of them.
+          <br><br>
+          So today, I just want you to know: you are loved more than you
+          realize, you are appreciated more than you know, and you deserve
+          every good thing headed your way. Keep being the wonderfully
+          ridiculous, endlessly kind person you are. Stay happy. Stay you.
+        </p>
+        <p class="letter-signoff">With all my love,<br><span>Your best friend</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. MEMORIES GALLERY ================= -->
+  <section class="section memories-section" id="memories">
+    <div class="section-inner">
+      <h2 class="fade-in-up">Memories 📸</h2>
+      <p class="section-sub fade-in-up delay-1">a few of my favorite moments with you</p>
+
+      <!-- Replace each .polaroid img src with your own photo, and edit the caption text -->
+      <div class="gallery">
+        <figure class="polaroid p1">
+          <div class="polaroid-photo ph-1">
+            <img src="memories/WhatsApp%20Image%202026-09-16%20at%207.55.15%20PM%20(2).jpeg" alt="Memory 1">
+          </div>
+          <figcaption>Beautiful Memory 💕</figcaption>
+        </figure>
+        <figure class="polaroid p2">
+          <div class="polaroid-photo ph-2">
+            <img src="memories/WhatsApp%20Image%202026-09-16%20at%207.55.15%20PM%20(1).jpeg" alt="Memory 2">
+          </div>
+          <figcaption>That Crazy Day 😂</figcaption>
+        </figure>
+        <figure class="polaroid p3">
+          <div class="polaroid-photo ph-3">
+            <img src="memories/WhatsApp%20Image%202026-09-16%20at%207.55.15%20PM.jpeg" alt="Memory 3">
+          </div>
+          <figcaption>Best Moments ✨</figcaption>
+        </figure>
+        <figure class="polaroid p4">
+          <div class="polaroid-photo ph-4">
+            <img src="memories/WhatsApp%20Image%202026-09-16%20at%207.53.23%20PM.jpeg" alt="Memory 4">
+          </div>
+          <figcaption>Forever Memories 🌸</figcaption>
+        </figure>
+        <figure class="polaroid p5">
+          <div class="polaroid-photo ph-5">
+            <img src="memories/WhatsApp%20Image%202026-09-16%20at%207.48.15%20PM%20(1).jpeg" alt="Memory 5">
+          </div>
+          <figcaption>Golden Days ☀️</figcaption>
+        </figure>
+        <figure class="polaroid p6">
+          <div class="polaroid-photo ph-6">
+            <img src="memories/WhatsApp%20Image%202026-09-16%20at%207.48.15%20PM.jpeg" alt="Memory 6">
+          </div>
+          <figcaption>Just Us Two 🫶</figcaption>
+        </figure>
+        <figure class="polaroid p7">
+          <div class="polaroid-photo ph-7">
+            <img src="memories/WhatsApp%20Image%202026-09-16%20at%207.48.14%20PM%20(1).jpeg" alt="Memory 7">
+          </div>
+          <figcaption>Little Adventures 🌷</figcaption>
+        </figure>
+        <figure class="polaroid p8">
+          <div class="polaroid-photo ph-8">
+            <img src="memories/WhatsApp%20Image%202026-09-16%20at%207.48.14%20PM.jpeg" alt="Memory 8">
+          </div>
+          <figcaption>Laughing Till It Hurt 🤍</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. THINGS I APPRECIATE ABOUT YOU ================= -->
+  <section class="section appreciate-section" id="appreciate">
+    <div class="section-inner">
+      <h2 class="fade-in-up">Things I Love About You 🌸</h2>
+      <div class="appreciate-grid">
+        <div class="appreciate-card"><span class="a-icon">😊</span><p>Your beautiful smile</p></div>
+        <div class="appreciate-card"><span class="a-icon">💗</span><p>Your endless kindness</p></div>
+        <div class="appreciate-card"><span class="a-icon">😂</span><p>Your crazy, funny side</p></div>
+        <div class="appreciate-card"><span class="a-icon">✨</span><p>Your positive energy</p></div>
+        <div class="appreciate-card"><span class="a-icon">🌸</span><p>How you make people happy</p></div>
+        <div class="appreciate-card"><span class="a-icon">🫶</span><p>Our friendship</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. BIRTHDAY SURPRISE (GIFT BOX) ================= -->
+  <section class="section gift-section" id="gift">
+    <div class="section-inner">
+      <h2 class="fade-in-up">One More Surprise 🎁</h2>
+      <p class="section-sub fade-in-up delay-1">go on, tap it</p>
+
+      <div class="gift-box-wrap">
+        <button class="gift-box" id="giftBox" aria-label="Open your gift">
+          <span class="gift-lid">🎀</span>
+          <span class="gift-body">🎁</span>
+        </button>
+        <div class="gift-reveal" id="giftReveal">
+          <p>Your biggest gift is another year of amazing memories! 🎁💗</p>
+        </div>
+      </div>
+    </div>
+    <canvas id="giftConfettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- ================= 7. FINAL MESSAGE ================= -->
+  <section class="section final-section" id="final">
+    <div class="section-inner">
+      <p class="final-line fade-in-up">Keep smiling. Keep shining. Keep being YOU. ✨</p>
+      <h2 class="final-heading fade-in-up delay-1">Happy Birthday once again, Plaksha! 🎂💗</h2>
+      <p class="final-sub fade-in-up delay-2">
+        May this year bring you happiness, success, unforgettable memories,
+        and everything you deserve.
+      </p>
+      <div class="final-hearts" aria-hidden="true">💗🌸💫</div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>made with 💗 for the best friend anyone could ask for</p>
+  </footer>
+</main>
+
+<!-- ================= 8. MUSIC PLAYER (no autoplay) ================= -->
+<div class="music-player" id="musicPlayer">
+  <!-- REPLACE the src below with your own birthday song / audio file -->
+  <audio id="bgAudio" loop preload="none">
+    <source src="music/birthday-song.wav" type="audio/wav">
+  </audio>
+  <button id="musicToggle" class="music-btn" aria-label="Play music">
+    <span id="musicIcon">🎵</span>
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
